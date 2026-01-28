@@ -2,6 +2,8 @@ name: Build Repo Listing
 
 on: 
   workflow_dispatch:
+  repository_dispatch:
+    types: [rebuild-listing]
   push:
     branches: main
     paths: source.json
